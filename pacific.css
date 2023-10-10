@@ -1,0 +1,99 @@
+/*
+GUI Assignment: Homework 2
+Date: 10/08/2023
+Name: Alexander Vasquez Romero Jr
+Email: alexander_vasquez1@student.uml.edu
+Description: This is the external CSS I used to modify the HTML file like in the handout images.
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+    display: flex; /* Used flexbox for the inline style of the main area */
+    align-items: center;
+    justify-content: center;
+	width: 80%; /* main area of page is 80% of page width */
+	min-width: 600px; /* min width for the main area as specified */
+	margin-left: 160px; /* Added nargin to make room for my navbar, which would require shifting the body text*/
+	background-image: linear-gradient(white, #00569f); /* Adding gradient (used a color picker for a more accurate color to the one seen in the handout*/
+	background-color: #00569f; /* Gave the website page the color of the blue gradient so it blends in with background-image once the gradient pattern stops repeating */
+	background-repeat: no-repeat; 
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul { /* Changing nav bar positioning and styling*/
+	font-size: 1.2em;
+	list-style-type: none; /* Removed hyperlink underline*/
+	margin-left: -25px; /* Slight positioning adjustments to make it look like the handout */
+	margin-top: 5px;
+}
+
+ul a{ /* Changing nav list colors*/
+	text-decoration: none;
+	color: #171f4e;
+	font-weight: bold;
+}
+
+#content img { /* Making floating image in order to have text wrap around it */
+    float: left;
+	padding-right: 20px;
+}
+
+#content { 
+	padding-top: 10px; /* adjustments to padding and margins */
+	padding-bottom: 50px;
+	padding-left: 180px;
+	background-image: linear-gradient(to right, #8cc6e3 160px, white 160px); /* Used a gradient to create my nav bar, I end up using the same gradient for my footer later on in my code */
+	list-style-image: url('marker.gif'); /* Added custom bullet point*/
+}
+
+.resort { /* Changing color of name of resort in body area*/
+	font-weight: bold;
+	color: #5f7e99;
+}
+nav{ /* This just aligns re-positions the bullet points to where I made my gradient "nav bar" previously in #content */
+	position: absolute; /* Used absolute positioning to keep my nav bar items from moving if i scroll horizontally*/
+	padding-top: 20px;
+
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1 {
+	font-family: Georgia, "Times New Roman", serif; /* Changed font */
+	font-weight: bolder;
+	background-color: #000032; /* Changed color of header bar */
+	color: white;
+/* Added sunset image to header bar + adjustments */
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: bolder;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	padding-left: 180px;
+	padding-bottom: 20px; /* Added extra padding to footer like shown in the handout */
+	background-image: linear-gradient(to right, #8cc6e3 160px, white 160px); /* Part 2 of my fake navigation bar, but for the footer*/
+	font-family: Georgia, "Times New Roman", serif;
+}
+
